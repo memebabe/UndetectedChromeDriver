@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net5.0;net48;net47;net46;net45;netstandard2.1;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net6.0;net5.0;net48;netstandard2.1;netstandard2.0</TargetFrameworks>
     <Authors>fysh711426</Authors>
     <PackageId>Selenium.UndetectedChromeDriver</PackageId>
     <Description>This repo is C# implementation of undetected_chromedriver.
@@ -24,8 +24,14 @@ It optimizes Selenium chromedriver to avoid being detected by anti-bot services.
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Selenium.WebDriver" Version="4.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Selenium.Support" Version="4.5.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="106.0.5249.6100" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Network\Proxy\" />
   </ItemGroup>
   
 </Project>

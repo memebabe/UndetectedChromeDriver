@@ -17,7 +17,7 @@ using System.Threading;
 
 namespace SeleniumUndetectedChromeDriver
 {
-    public class UndetectedChromeDriver : ChromeDriver
+    public partial class UndetectedChromeDriver : ChromeDriver
     {
         private UndetectedChromeDriver(ChromeDriverService service,
             ChromeOptions options) : base(service, options) { }
